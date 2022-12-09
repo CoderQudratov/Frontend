@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+*::before, *::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    content: " ";
+}
+::-webkit-scrollbar{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+body{
+   background: linear-gradient(100deg, 	 #1c1c7d,blue,#1c1c7d);
+   height: 150vh;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    min-height: 8vh;
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+    
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__brand{
+    width: 30%;
+}
+.nav__brand h1{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.nav__navigation{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav__navigation__links{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav__navigation__links::after{
+    content: "";
+    width:1px;
+   height: 2px;
+   color: red;
+   display: inline-block;
+   background-color: red;
+   position: absolute;
+   top: 30px;
+   left: -1px;
+   transition: all .5s ease-in-out;
+   opacity: 0;
+}
+.nav__navigation__links:hover::after{
+    content: "";
+    width:100%;
+   height: 2px;
+   color: red;
+   display: inline-block;
+   background-color: red;
+   position: absolute;
+   opacity: 9;
+   /* top: 10px;
+   left: -60px; */
+}
+.section-1{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sect__container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.section__text{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.text__container{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-evenly;
+  
+}
+.text__container h1:nth-child(1){
+    color: red;
+    font-size: 33px;
+    letter-spacing: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.text__container h1:nth-child(2){
+    color: #fff;
+    font-size: 33px;
+    letter-spacing: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.text__btn button{
+    padding: 0.5rem 1rem ;
+    background-color: black;
+    border-radius: 5px;
+}
+.text__btn button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+.text__container p{
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: 'Shalimar', cursive;
+}
+.sect__icons{
+    margin-left: -30px;
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.sect__img{
+    width: 50%;
+    float: right;
+    position: relative;
+}
+.sect__img img{
+    width:300px; height:400px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.sect__icons li{
+    background-color: #fff;
+    padding: 8px 9px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.sect__icons i{
+    font-size: 20px;
+}
+.fa-instagram{
+    color: crimson;
+}
+.fa-youtube{
+    color: crimson;
+}
